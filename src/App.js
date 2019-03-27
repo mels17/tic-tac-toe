@@ -24,7 +24,7 @@ class App extends Component {
         <div className="app">
           <h2>Tic Tac Toe</h2>
           <Game />
-          <button onClick={this.resetGame}>RESET</button>
+          <button className='button' onClick={this.resetGame}>RESET</button>
         </div>
       </div>
     );
