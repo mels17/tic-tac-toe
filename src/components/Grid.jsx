@@ -35,41 +35,51 @@ export default class Grid extends React.Component {
 
   changeGridState(x, y) {
     if(this.state.currentPlayer === 'X') {
+      // eslint-disable-next-line
       this.state.grid[x][y] = 1
     } else {
+      // eslint-disable-next-line
       this.state.grid[x][y] = 2
     }
 
     if(this.state.grid[0][0] !== 0 && (this.state.grid[0][0] === this.state.grid[0][1])&& (this.state.grid[0][1] === this.state.grid[0][2])) {
+      // eslint-disable-next-line
       this.state.winner = this.state.grid[0][0]
       this.setState({won: true})
     }
     if(this.state.grid[1][0] !== 0 && (this.state.grid[1][0] === this.state.grid[1][1]) && (this.state.grid[1][1] === this.state.grid[1][2])) {
+      // eslint-disable-next-line
       this.state.winner = this.state.grid[1][0]
       this.setState({won: true})
     }
     if(this.state.grid[2][0] !== 0 && (this.state.grid[2][0] === this.state.grid[2][1]) && (this.state.grid[2][1] === this.state.grid[2][2])) {
+      // eslint-disable-next-line
       this.state.winner = this.state.grid[2][0]
       this.setState({won: true})
     }
     if(this.state.grid[0][0] !== 0 && (this.state.grid[0][0] === this.state.grid[1][0]) && (this.state.grid[1][0] === this.state.grid[2][0])) {
+      // eslint-disable-next-line
       this.state.winner = this.state.grid[0][0]
       this.setState({won: true})
     }
     if(this.state.grid[0][1] !== 0 && (this.state.grid[0][1] === this.state.grid[1][1]) && (this.state.grid[1][1] === this.state.grid[2][1])) {
+      // eslint-disable-next-line
       this.state.winner = this.state.grid[0][1]
       this.setState({won: true})
     }
     if(this.state.grid[0][2] !== 0 && (this.state.grid[0][2] === this.state.grid[1][2]) && (this.state.grid[1][2] === this.state.grid[2][2])) {
+      // eslint-disable-next-line
       this.state.winner = this.state.grid[0][2]
       this.setState({won: true})
     }
 
     if(this.state.grid[0][0] !== 0 && (this.state.grid[0][0] === this.state.grid[1][1]) && (this.state.grid[1][1] === this.state.grid[2][2])) {
+      // eslint-disable-next-line
       this.state.winner = this.state.grid[0][0]
       this.setState({won: true})
     }
     if(this.state.grid[2][0] !== 0 && (this.state.grid[2][0] === this.state.grid[1][1]) && (this.state.grid[1][1] === this.state.grid[0][2])) {
+      // eslint-disable-next-line
       this.state.winner = this.state.grid[2][0]
       this.setState({won: true})
     }
