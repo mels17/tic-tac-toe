@@ -1,0 +1,6 @@
+repo: ttt-demo
+name: ttt
+namespace: training
+container: nginx
+containerTag: alpine
+containerPort: "80"
